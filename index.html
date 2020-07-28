@@ -132,10 +132,10 @@
 
 
   <div class="tab" >
-    <button class="tablinks" onclick="openCity(event, 'Rice')">Rice</button>
-    <button class="tablinks" onclick="openCity(event, 'Noodle')">Noodle</button>
-    <button class="tablinks" onclick="openCity(event, 'Drinks')">Drinks</button>
-    <button class="tablinks" onclick="openCity(event, 'Sides')">Sides</button>
+    <button class="tablinks" onclick="openMenu(event, 'Rice')">Rice</button>
+    <button class="tablinks" onclick="openMenu(event, 'Noodle')">Noodle</button>
+    <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+    <button class="tablinks" onclick="openMenu(event, 'Sides')">Sides</button>
   </div>
   
   <div id="Rice" class="tabcontent" style="display: block;">
@@ -180,7 +180,7 @@
       <li>星洲米粉 Singapore bee hoon <br>RM5.50 </li>
       <li>福建面 Hokkien mee  <br>RM5.50 </li>
       <li>干炒面 Fried noodle <br>RM5.50 </li>
-      <li>闷伊面 Yee Mee Kicap <br>RM6.50 </li>
+      <li>焖伊面 Yee Mee Kicap <br>RM6.50 </li>
       <li>清汤米粉/面/粿条 Noodle Soup <br>RM5.50 </li>
 
 
@@ -225,8 +225,8 @@
       <li><div> <img src="food folder/酸甜鱼片.jpg" alt="fish" > <p>酸甜鱼片 Sweet&Sour fish <br> RM12</p></div></li>
       <li><div> <img src="food folder/蒙古鸡.jpg" alt="fish" > <p>蒙古鸡 Mongo Chicken <br> RM12</p></div></li>
       <li><div> <img src="food folder/扣肉.jpg" alt="fish" > <p>芋头扣肉 HAKKA Braised Pork Belly with Taro <br> RM15</p></div></li>
-      <li><div> <img src="food folder/酿豆腐.jpg" alt="fish" > <p>酿豆腐 HAKKA Yong ToFU <br> RM1.50/piece</p></div></li>
-      <li><div> <img src="food folder/铁板豆腐.jpg" alt="fish" > <p>铁板豆腐 Hot Plate Tofu <br> RM10</p></div></li>
+      <li><div> <img src="food folder/酿豆腐.jpg" alt="fish" > <p>酿豆腐 HAKKA Yong ToFu <br> RM1.50/piece</p></div></li>
+      <li><div> <img src="food folder/铁板豆腐.jpg" alt="fish" > <p>铁板豆腐 Hot Plate ToFu <br> RM10</p></div></li>
       <li><div> <img src="food folder/鱼头炉.jpg" alt="fish" > <p>鱼头炉 Fish Head Steamboat <br> RM35</p></div></li>
       <li><div> <img src="food folder/菜胆.jpg" alt="fish" > <p>菜胆 Baby Kai lan <br> RM8</p></div></li>
       <li><div> <img src="food folder/清炒番薯叶.jpg" alt="fish" > <p>清炒番薯叶 Stir-fried Potato Leave <br> RM8</p></div></li>
@@ -332,7 +332,7 @@ function myFunction() {
 
 
 
-function openCity(evt, menu) {
+function openMenu(evt, menu) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
