@@ -1,0 +1,285 @@
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+
+#slider{
+display: inline;}
+
+
+
+
+#email{
+  color: #696969;
+}
+
+
+
+ header img{
+   
+  width: 100%;
+  height: 650px;
+
+}
+
+
+#info{
+  text-align: center;
+  background-color: #4d0000;
+  color: #ffffff;
+  font-family: cursive;
+}
+
+#info div {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  
+}
+
+#info .column{
+  width:  20%;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #4d0000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color:  #800000;
+  font-size: 200px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-shadow: 2px 2px #000000;  
+ pointer-events: none;
+}
+
+.topnav #mobilenav {
+  display: none;
+}
+
+
+#menu span img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+
+}
+
+#menu p  {
+  text-align: center;
+
+
+}
+
+ul {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+ul li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+li img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#About{
+  padding: 10px;
+}
+
+
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+ 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+div.tab {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+}
+
+body {
+  background: beige;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.colum {
+  flex-direction: column;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.colum div {
+  background-color: rgba(231, 217, 24, 0.2);
+  font-size: 1.4rem;
+  padding: 15px 0;
+  border: 2px solid #6d0808;
+}
+
+.card {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+
+}
+
+.image {
+  background: grey;
+ flex: 1;
+}
+
+.image img {
+  display: block;
+ width: 100%;
+ height: 100%;
+}
+
+
+
+/* On smaller screens */
+@media only screen and (max-width: 600px) {
+ 
+  #slider img{
+    width: 100%;
+     height: 450px;
+    
+    }
+    
+
+     #info div  {
+      display: inline-block;
+      width: 100%;
+      
+    }
+
+    #info .column{
+      width:  50%;
+    }
+ 
+
+   
+
+    
+
+    ul{
+    columns: 1;    
+    }
+
+    .tab button {
+      display: inline;
+      float: none;
+      
+      
+    }
+
+  
+    
+
+}
