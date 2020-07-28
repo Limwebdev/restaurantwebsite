@@ -279,7 +279,12 @@ body {
       
     }
 
+   .image img {
   
+     height: 30%;
+    }
+    
+
     
 
 }
