@@ -231,7 +231,7 @@ body {
 }
 
 .image {
-  background: grey;
+  background: beige;
  flex: 1;
 }
 
@@ -281,7 +281,7 @@ body {
 
    .image img {
   
-     height: 30%;
+     height: 35%;
     }
     
 
