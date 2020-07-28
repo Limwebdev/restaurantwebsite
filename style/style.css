@@ -226,13 +226,13 @@ body {
 }
 
 .card {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
-
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.8);
+margin: 0 50px;
 }
 
 .image {
-  background: beige;
- flex: 1;
+  background: none;
+ flex: .5;
 }
 
 .image img {
@@ -279,12 +279,10 @@ body {
       
     }
 
-   .image img {
+    .image img {
   
-     height: 35%;
+     height: 20%;
     }
-    
-
     
 
 }
