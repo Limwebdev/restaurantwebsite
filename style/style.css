@@ -242,6 +242,10 @@ margin: 0 50px;
  height: 100%;
 }
 
+video{
+  width: 20%;
+  height: 10%;
+}
 
 
 /* On smaller screens */
@@ -289,6 +293,9 @@ margin: 0 50px;
       flex: 100%;
     }
 
-    
+    video{
+      width: 50%;
+      height: 50%;
+    }
 
 }
