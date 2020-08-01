@@ -5,7 +5,9 @@
   <title>Restaurant 99</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/run.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -118,7 +120,7 @@
 <div id="menu">
 
 
-  <span>
+  <span data-aos="fade-down">
  <img src="img/restoran99logo.png">
   </span>
 
@@ -151,7 +153,7 @@
      <li>咖喱猪/鱼饭 Curry pork/fish rice <br>RM6.50 </li>
      <li>咕噜肉饭 Sweet&sour chicken/pork/fish rice <br>RM6.50 </li>
      <li>排骨王饭 Spare ribs W.BBQ sauce rice <br>RM6.50 </li>
-     <li>烩饭 Wat rice <br>RM5.50 </li>
+     <li>烩饭 Mui rice <br>RM5.50 </li>
      <li>扬州炒饭 Yang Zhou fried rice <br>RM5.50 </li>
      <li>咸鱼炒饭 Salted fish fried rice <br>RM6.50 </li>
      <li>苦瓜烧肉饭 Bitter gourd pork rice <br>RM7.50 </li>
@@ -173,12 +175,12 @@
     <h3>面类Noodle</h3>
     <ul>
       <li><div> <img src="food folder/月光河.jpg" alt="fried chicken" > <p>月光河 Moonlight fried kuey teow <br> RM6.50</p></div></li>
-      <li><div> <img src="food folder/滑蛋河.jpg" alt="fried chicken" > <p>滑蛋河 Wat Dan Hor <br> Rm5.50</p></div></li>
-      <li>三楼米粉 Speciality bee hoon <br>RM6.50 </li>
+      <li><div> <img src="food folder/滑蛋河.jpg" alt="Wat Dan Hor" > <p>滑蛋河 Wat Dan Hor <br> Rm5.50</p></div></li>
+      <li><div> <img src="food folder/三楼米粉.jpg" alt="fried chicken" > <p>三楼米粉 Speciality bee hoon<br> Rm6.50</p></div></li>
+      <li><div> <img src="food folder/福建面.jpg" alt="Hokkien mee" > <p>福建面 Hokkien mee <br> Rm5.50</p></div></li>
       <li>干炒河粉 Fried kuey teow <br>RM5.50 </li>
       <li>香底米粉 Crispy mee hoon <br>RM6.50 </li>
       <li>星洲米粉 Singapore bee hoon <br>RM5.50 </li>
-      <li>福建面 Hokkien mee  <br>RM5.50 </li>
       <li>干炒面 Fried noodle <br>RM5.50 </li>
       <li>焖伊面 Yee Mee Kicap <br>RM6.50 </li>
       <li>清汤米粉/面/粿条 Noodle Soup <br>RM5.50 </li>
@@ -231,6 +233,14 @@
       <li><div> <img src="food folder/菜胆.jpg" alt="fish" > <p>菜胆 Baby Kai lan <br> RM8</p></div></li>
       <li><div> <img src="food folder/清炒番薯叶.jpg" alt="fish" > <p>清炒番薯叶 Stir-fried Potato Leave <br> RM8</p></div></li>
       <li><div> <img src="food folder/玻璃生菜.jpg" alt="fish" > <p>玻璃生菜 Stir-fried lettuce <br> RM8</p></div></li>
+      <li><div> <img src="food folder/豆豉茄子.jpg" alt="fish" > <p>Stir-fried eggplant with tempeh 豆豉茄子  <br> RM10</p></div></li>
+      <li><div> <img src="food folder/蒜炒烧肉.jpg" alt="fish" > <p>Stir-fried roasted pork with leek 蒜炒烧肉 <br> RM15</p></div></li>
+      <li><div> <img src="food folder/香煎锅贴.jpg" alt="fish" > <p>Pot Sticker(dumpling) 香煎锅贴 <br> RM8 (10 per plate)</p></div></li>
+      <li><div> <img src="food folder/泰式鸡.jpg" alt="fish" > <p>Fried chicken with thai sauce 泰式鸡 <br> RM8 (10 per plate)</p></div></li>
+
+
+
+
 
 
     </ul>
@@ -248,9 +258,11 @@
 
 
 
-<section id="about">
+<section data-aos="flip-left"
+data-aos-easing="ease-out-cubic"
+data-aos-duration="2000" id="about">
 
-  <div class="card">
+  <div  class="card">
     <h2  style="font-size: 2.5rem; text-shadow: 3px 3px #6b6161;">About</h2>
     <div class="container">
   <div class="colum">
@@ -264,8 +276,8 @@
      <p style="font-size: 1rem;">Restaurant 99 is located at Taman University, Our restaurant provide Signature HAKKA dishes such as: Black Fungus with Fried Pork, HAKKA YONG TAU FU,Black Vinegar Pig Trotter, HAKKA Braised Pork with Taro and many others.... </p> 
   </div>
  
-  <div class="image">
-    <img src="img/Restaurant99.jpg">
+  <div  class="image">
+    <img  src="img/Restaurant99.jpg">
   </div>
 
 </div>
@@ -284,18 +296,19 @@
 </section>
 
 
-<div id="order">
+<div  id="order">
   <p style="font-size: 50px; text-align: center;">
     Order Now in galaEATS!    <br>
     Search for(成记海鲜煮炒)  <br>
-   <a href="https://www.galaeats.com/" target="_blank"><img src="img/galaeat.png"  alt="a logo"></a> 
+   <a href="https://www.galaeats.com/" target="_blank"><img src="img/galaeat.png" data-aos="zoom-in-up"  alt="a logo"></a> 
   </p>
 
 
-  <p style="font-size: 30px; text-align: center;">
+  <p data-aos="fade-up"
+  data-aos-duration="3000" style="font-size: 30px; text-align: center;">
     Example    <br>
     <video  controls >
-      <source src="img/animated.mp4" type="video/mp4">
+      <source src="img/animated.mp4" type="video/mp4" >
     </video> 
    </p>
 
@@ -361,7 +374,7 @@ function openMenu(evt, menu) {
 }
 
 
-
+AOS.init();
 
 
 </script>
