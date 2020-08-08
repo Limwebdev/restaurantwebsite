@@ -171,8 +171,8 @@ li img{
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
+  padding: 15px 16px;
+  transition: 0.5s;
   font-size: 17px;
 }
 
@@ -247,6 +247,12 @@ video{
   height: 10%;
 }
 
+#time{
+  pointer-events: none;
+  font-size: 15px;
+  float:right;
+}
+
 
 /* On smaller screens */
 @media only screen and (max-width: 600px) {
@@ -298,4 +304,11 @@ video{
       height: 50%;
     }
 
+    .tab button{
+      padding: 15px 5px;
+    }
+
+    #time{
+      font-size: 10px;
+    }
 }
