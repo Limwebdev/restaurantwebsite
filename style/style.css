@@ -1,417 +1,375 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <link rel="shortcut icon" href="img/restoran99logo.png" />
-  <title>Restaurant 99</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="js/run.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <link rel="stylesheet" href="style/style.css">
-</head>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
 
 
-<body>
 
-<header>
-<!-- top nav start-->
 
-  <div class="topnav">
-    <a  class="active">Restoran 99</a>
-    <div id="mobilenav">
-      <a href="#info">Address</a>
-      <a href="#menu">Menu</a>
-      <a href="#about">About</a>
-      <a href="#order">Order Now</a>
-    </div>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 2.5s;
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .6} 
+  to {opacity: 1}
+}
+
+
+#slider{
+display: inline;}
+
+
+
+
+#email{
+  color: #696969;
+}
+
+
+
+ header img{
+   
+  width: 100%;
+  height: 650px;
+
+}
+
+
+#info{
+  text-align: center;
+  background-color: #4d0000;
+  color: #ffffff;
+  font-family: cursive;
+}
+
+#info div {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
   
-    </a>
-  </div>
+}
 
-<!-- top nav end-->
+#info .column{
+  width:  20%;
+}
 
-
-
-
-
-
-
-<!-- Slider start-->
-  <div id=slider>
-    <div class="slideshow-container">
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
 
 
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: #4d0000;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color:  #800000;
+  font-size: 200px;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ text-shadow: 2px 2px rgba(0, 0, 0,.2);  
+ pointer-events: none;
+}
+
+.topnav #mobilenav {
+  display: none;
+}
+
+
+#menu span img{
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+
+
+}
+
+#menu p  {
+  text-align: center;
+
+
+}
+
+ul {
+  list-style-type: none;
+  columns: 3;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+}
+
+ul li{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+li img{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+#About{
+  padding: 10px;
+}
+
+.card img{
+  padding: 10px 20px;
+}
+
+
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+ 
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 15px 30px;
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+div.tab {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+ 
+}
+
+body {
+  background: beige;
+  color: black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.colum {
+  flex-direction: column;
+  margin-right: 10px;
+  flex: 1;
+}
+
+.colum div {
+  background-color: rgba(231, 217, 24, 0.2);
+  font-size: 1.4rem;
+  padding: 15px 0;
+  margin-left: 10px;
+  border: 2px solid #6d0808;
+}
+
+.card {
+  box-shadow: 0 16px 32px 0 rgba(0,0,0,0.8);
+margin: 0 50px;
+}
+
+.image {
+  background: none;
+ flex: .5;
+}
+
+.image img {
+  display: block;
+ width: 100%;
+ height: 100%;
+}
+
+video{
+  width: 20%;
+  height: 10%;
+}
+
+#time{
+  pointer-events: none;
+  font-size: 17px;
+  float:right;
+  font-family: "Lucida Console", Courier, monospace;
+  color: #10824e;
+  padding:5px 50px;
+}
+
+.detail{
+  padding: 5px 10px;
+  margin-left: 10px;
+}
+
+.icon{
+  width: 50px;
+   height: 50px;
+}
+
+.aboutimg{
+  width: 20%
+}
+
+
+
+
+
+
+/* On smaller screens */
+@media only screen and (max-width: 768px) {
+ 
+  #slider img{
+    width: 100%;
+     height: 450px;
+    
+    }
     
 
-      <div class="mySlides fade">
-        <img src="img/res99logo.jpg" >
-      </div>
-
-      <div class="mySlides fade">
-        <img src="img/煮炒1.jpg" >  
-      </div>
+     #info div  {
+      display: inline-block;
+      width: 100%;
       
-      <div class="mySlides fade">
-        <img src="img/slidefood.jpg" >
-      </div>
-    </div>
-    </div>
-  </div> 
+    }
 
-  <div id="info">
-    <div class="column">
-      <div data-aos="fade-right" >
-        <div><img class="icon"  src="img/map.png" alt="map icon" ><br> Address </div>
-        <p > 54,Jalan Penyiaran 2, Taman Universiti,81300 Skudai,Johor</p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div data-aos="fade-left" >
-        <div> <img class="icon"  src="img/open.png" alt="open icon" > <br> Opening Time </div> 
-        <p>  Monday-Sunday <br> 12pm-10pm</p>
-      </div>
-    </div>
-
-    <div class="column">
-      <div data-aos="fade-right" >
-        <div> <img class="icon"  src="img/phone.png" alt="phone icon" ><br>Phone</div>
-        
-        <p> 019-7396990<br>-</p>
-      </div>
-    </div>
-
-    <div  class="column">
-      <div data-aos="fade-left" id="email">
-        <div><img class="icon" src="img/email.png" alt="email icon" ><br> Email</div>
-        <p> coming soon<br>~</p>
-      </div>
-    </div>
-
+    #info .column{
+      width:  50%;
+    }
+ 
 
    
 
+    
 
+    ul{
+    columns: 1;    
+    }
 
-
-
-
-
-
-
-
-
-
-
-  </div>
-
-
-</header>
-<!-- Slider End-->
-
-
-
-<section>
-
-<div id="menu">
-
-
-  <span >
- <img data-aos="fade-down"
- data-aos-duration="1500" src="img/restoran99logo.png">
-  </span>
-
-  <span>
-  <p >RESTORAN 99 MENU </p>
-  <p>(Price for dine in only  店内用餐价格 )</p>
-</div>
-  </span>
-
-
-
-
-  <div class="tab" >
-    <button class="tablinks" onclick="openMenu(event, 'Rice')">Rice</button>
-    <button class="tablinks" onclick="openMenu(event, 'Noodle')">Noodle</button>
-    <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
-    <button class="tablinks" onclick="openMenu(event, 'Sides')">Sides</button>
-
-  <button id="time"  ></button>
-
-  </div>
-  
-  <div  id="Rice" class="tabcontent" style="display: block;">
-    <h3 >饭类Rice</h3>
-    <ul >
-     <li ><div> <img src="food folder/咖喱鸡饭.jpg" alt="Curry Chicken Rice" > <p>咖喱鸡饭 Curry Chicken Rice <br> RM6.50</p></div></li>
-     <li><div> <img src="food folder/宫保鸡饭.jpg" alt="Dried Chili Chicken Rice" > <p>宫保鸡饭 Dried Chili Chicken Rice <br> RM6.50</p></div></li>
-     <li><div> <img src="food folder/马来风光饭.jpg" alt="Kangkung Belacan Rice" > <p>马来风光饭 Kangkung Belacan Rice <br> RM6.50</p></div></li>
-     <li><div> <img src="food folder/臭豆sambal饭.jpg" alt="Sambal Petai Rice" > <p>臭豆sambal饭 Sambal Petai Rice <br> RM7.50</p></div></li>
-     <li>奶油鸡饭 Butter chicken rice <br> RM8</li>
-     <li>姜葱猪/鸡/鱼饭 Ginger&onion pork/chicken/fish rice <br>RM6.50 </li>
-     <li>宫保猪/鱼饭 Dried Chili pork/fish rice <br>RM6.50 </li>
-     <li>咖喱猪/鱼饭 Curry pork/fish rice <br>RM6.50 </li>
-     <li>咕噜肉饭 Sweet&sour chicken/pork/fish rice <br>RM6.50 </li>
-     <li>排骨王饭 Spare ribs W.BBQ sauce rice <br>RM6.50 </li>
-     <li>烩饭 Mui rice <br>RM5.50 </li>
-     <li>扬州炒饭 Yang Zhou fried rice <br>RM5.50 </li>
-     <li>咸鱼炒饭 Salted fish fried rice <br>RM6.50 </li>
-     <li>苦瓜烧肉饭 Bitter gourd pork rice <br>RM7.50 </li>
-     <li>苦瓜鸡饭 Bitter gourd chicken/fish rice <br>RM6.50 </li>
-     <li>苦瓜鱼饭 Bitter gourd fish rice <br>RM6.50 </li>
-
-
-
-
-    </ul>
-  
-  
-  
-  
-  
-  </div>
-
-  <div id="Noodle" class="tabcontent">
-    <h3>面类Noodle</h3>
-    <ul>
-      <li><div> <img src="food folder/月光河.jpg" alt="Moonlight fried kuey teow" > <p>月光河 Moonlight fried kuey teow <br> RM6.50</p></div></li>
-      <li><div> <img src="food folder/滑蛋河.jpg" alt="Wat Dan Hor" > <p>滑蛋河 Wat Dan Hor <br> Rm5.50</p></div></li>
-      <li><div> <img src="food folder/三楼米粉.jpg" alt="Speciality bee hoon" > <p>三楼米粉 Speciality bee hoon<br> Rm6.50</p></div></li>
-      <li><div> <img src="food folder/福建面.jpg" alt="Hokkien mee" > <p>福建面 Hokkien mee <br> Rm5.50</p></div></li>
-      <li>干炒河粉 Fried kuey teow <br>RM5.50 </li>
-      <li>香底米粉 Crispy mee hoon <br>RM6.50 </li>
-      <li>星洲米粉 Singapore bee hoon <br>RM5.50 </li>
-      <li>干炒面 Fried noodle <br>RM5.50 </li>
-      <li>焖伊面 Yee Mee Kicap <br>RM6.50 </li>
-      <li>清汤米粉/面/粿条 Noodle Soup <br>RM5.50 </li>
-
-
-
-
+    .tab button {
+      display: inline;
+      float: none;
       
+      
+    }
 
-     
-    </ul>
-  </div>
+    .image img {
   
-  <div id="Drinks" class="tabcontent">
-    <h3>饮料Drinks</h3>
-    <ul>
-      <li>Kopi</li>
-      <li>Kopi o</li>
-      <li>Kopi c</li>
-      <li>Teh</li>
-      <li>Teh o</li>
-      <li>Teh o limao</li>
-      <li>Teh c</li>
-      <li>Nescafe</li>
-      <li>Milo</li>
-      <li>Air limao</li>
-      <li>Chinese tea 唐茶</li>
-      <li>Air bunga 菊花茶</li>
-      <li>Barli campur kacang hijau 薏米绿豆</li>
-      <li>Liang teh 凉茶</li>
-      <li>Cans 罐装水</li>
-    </ul>
+    display: none;   
+    }
+
+    .colum {
+      flex: 100%;
+    }
+
+    video{
+      width: 50%;
+      height: 50%;
+    }
+
+    .tab button{
+      padding: 15px 5px;
+    }
+
+    #time{
+      font-size: 10px;
+      margin-top: 12px ;
+      padding-left: 10px;
+    }
 
 
-  </div>
-  
-  <div id="Sides" class="tabcontent">
-    <h3>配菜Sides</h3>
-    <ul>
-      <li><div> <img src="food folder/三味金目卢.jpg" alt="fish" > <p>三味金目卢 Three Flavour fish <br> RM "current price"</p></div></li>
-      <li><div> <img src="food folder/柠檬鸡.jpg" alt="Lemon Chicken" > <p>柠檬鸡 Lemon Chicken <br> RM18</p></div></li>
-      <li><div> <img src="food folder/叁巴啦啦.jpg" alt="Sambal LaLa" > <p>叁巴啦啦 Sambal LaLa <br> RM18</p></div></li>
-      <li><div> <img src="food folder/猪脚醋.jpg" alt="Black Vinegar Pig Trotter" > <p>猪脚醋 Black Vinegar Pig Trotter <br> RM12</p></div></li>
-      <li><div> <img src="food folder/酸甜鱼片.jpg" alt="Sweet&Sour fish" > <p>酸甜鱼片 Sweet&Sour fish <br> RM12</p></div></li>
-      <li><div> <img src="food folder/蒙古鸡.jpg" alt="Mongo Chicken" > <p>蒙古鸡 Mongo Chicken <br> RM12</p></div></li>
-      <li><div> <img src="food folder/扣肉.jpg" alt="HAKKA Braised Pork Belly with Taro" > <p>芋头扣肉 HAKKA Braised Pork Belly with Taro <br> RM15</p></div></li>
-      <li><div> <img src="food folder/酿豆腐.jpg" alt="HAKKA Yong ToFu" > <p>酿豆腐 HAKKA Yong ToFu <br> RM1.50/piece</p></div></li>
-      <li><div> <img src="food folder/铁板豆腐.jpg" alt="Hot Plate ToFu" > <p>铁板豆腐 Hot Plate ToFu <br> RM10</p></div></li>
-      <li><div> <img src="food folder/鱼头炉.jpg" alt="Fish Head Steamboat" > <p>鱼头炉 Fish Head Steamboat <br> RM35</p></div></li>
-      <li><div> <img src="food folder/菜胆.jpg" alt="Baby Kai lan" > <p>菜胆 Baby Kai lan <br> RM8</p></div></li>
-      <li><div> <img src="food folder/清炒番薯叶.jpg" alt="Stir-fried Potato Leave" > <p>清炒番薯叶 Stir-fried Potato Leave <br> RM8</p></div></li>
-      <li><div> <img src="food folder/玻璃生菜.jpg" alt="Stir-fried lettuce" > <p>玻璃生菜 Stir-fried lettuce <br> RM8</p></div></li>
-      <li><div> <img src="food folder/豆豉茄子.jpg" alt="Stir-fried eggplant with tempeh" > <p>豆豉茄子 Stir-fried eggplant with tempeh   <br> RM10</p></div></li>
-      <li><div> <img src="food folder/蒜炒烧肉.jpg" alt="Stir-fried roasted pork with leek" > <p>蒜炒烧肉 Stir-fried roasted pork with leek <br> RM15</p></div></li>
-      <li><div> <img src="food folder/香煎锅贴.jpg" alt="Pot Sticker(dumpling)" > <p>香煎锅贴 Pot Sticker(dumpling)  <br> RM8 (10 per plate)</p></div></li>
-      <li><div> <img src="food folder/泰式鸡.jpg" alt="Fried chicken with thai sauce" > <p>泰式鸡 Fried chicken with thai sauce  <br> RM15 </p></div></li>
-      <li><div> <img src="food folder/咸蛋鸡.jpg" alt="Fried chicken with salted egg sauce" > <p>咸蛋鸡 Fried chicken with salted egg sauce  <br> RM15 </p></div></li>
-      <li><div> <img src="food folder/南乳炸肉.jpg" alt="Fried pork with thai sauce" > <p>南乳炸肉 Fried chicken with nanru sauce  <br> RM15 </p></div></li>
-
-
-
-
-
-
-
-    </ul>
-  </div>
-
-
-
-
-
-</div>
-
-</section>
-
-
-
-
-
-<section data-aos="flip-left"
-data-aos-easing="ease-out-cubic"
-data-aos-duration="2000" id="about">
-
-  <div  class="card">
-    <h2  style="font-size: 2.5rem; text-shadow: 3px 3px #6b6161;">About</h2>
-    <div class="container">
-  <div class="colum">
-    <div>
-      <a href="https://www.facebook.com/Restoran99TamanU/" target="_blank" style="color: black;"> <img class="aboutimg" src="img/fb.png" alt="fblogo" >&nbsp  99 茶餐室（Restoran 99）</a> 
-    </div>
-    <div>
-      <a href="https://www.instagram.com/restoran99/?hl=zh-cn" target="_blank" style="color: black;"> <img class="aboutimg" src="img/insta.png" alt="instalogo" >&nbsp restoran99 </a>
-    </div>
-    <p class="detail" style="background-color: white; font-size: 1rem; " >99茶餐室位于大学城的一间餐馆，主要提供本地煮炒。老板是位知知港客家人，并提供了招牌客家菜，例如：木耳炸肉、猪脚醋、芋头扣肉、红烧猪手、客家酿豆腐、鱼头炉、咖喱鱼头... </p>
-     <p class="detail" style="font-size: 1rem;">Restaurant 99 is located at Taman University, Our restaurant provide Signature HAKKA dishes such as: Black Fungus with Fried Pork, HAKKA YONG TAU FU,Black Vinegar Pig Trotter, HAKKA Braised Pork with Taro and many others.... </p> 
-  </div>
- 
-  <div  class="image">
-    <img  src="img/Restaurant99.jpg">
-  </div>
-
-</div>
-
-
-
-
+    .aboutimg{
+      
+      width: 40%;
+      
+    }
     
-
-  </div>
-
-
-
-
-
-</section>
-
-
-<div  id="order">
-  <p style="font-size: 50px; text-align: center;">
-    Order Now in galaEATS!    <br>
-    Search for(成记海鲜煮炒)  <br>
-   <a href="https://www.galaeats.com/" target="_blank"><img src="img/galaeat.png" data-aos="zoom-in-up"  alt="a logo"></a> 
-  </p>
-
-
-  <p data-aos="fade-up"
-  data-aos-duration="3000" style="font-size: 30px; text-align: center;">
-    Example    <br>
-    <video  controls >
-      <source src="img/animated.mp4" type="video/mp4" >
-    </video> 
-   </p>
-
-
-
-
- 
-    
-
-</div>
-
-
-
-
-
-<script>
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  
-  slides[slideIndex-1].style.display = "block";  
-  setTimeout(showSlides, 3500); // Change image every 3.5 seconds
-}
-
-
-
-function myFunction() {
-  var x = document.getElementById("mobilenav");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-
-var onrun =setInterval(runningtime, 1000 );
-
-
-function runningtime(){
-  var d = new Date();
-  var time = new Date().toLocaleTimeString();
-  var date = new Date().toLocaleDateString();
-
-  var weekday = new Array(7);
-  weekday[0] = "Sunday";
-  weekday[1] = "Monday";
-  weekday[2] = "Tuesday";
-  weekday[3] = "Wednesday";
-  weekday[4] = "Thursday";
-  weekday[5] = "Friday";
-  weekday[6] = "Saturday";
-  var day = weekday[d.getDay()];
-
-  document.getElementById("time").innerHTML =day+'  '+date+'<br>'+time;
-
 }
 
 
 
 
-function openMenu(evt, menu) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+
+
+@media only screen and (max-width: 400px) {
+  .tab button{
+    padding: 15px 2px;
   }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+
+  #time{
+    font-size:0.4rem;
+    margin-top: 15px ;
   }
-  document.getElementById(menu).style.display = "block";
-  evt.currentTarget.className += " active";
 }
 
 
-AOS.init();
+@media only screen and (max-width: 300px) {
+
+  .tab button{
+    font-size: 5px;
+  }
 
 
 
+  }
 
-
-
-
-
-
-
-</script>
-
-</body>
-</html> 
