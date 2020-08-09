@@ -170,6 +170,8 @@ li img{
 /* Style the buttons inside the tab */
 .tab button {
   background-color: inherit;
+  font-family: "Monaco";
+  font-variant: small-caps;
   border: none;
   outline: none;
   cursor: pointer;
@@ -253,8 +255,9 @@ video{
   pointer-events: none;
   font-size: 17px;
   float:right;
-  font-family: "Lucida Console", Courier, monospace;
-  color: #10824e;
+  font-family: sans-serif;
+  font-variant: small-caps;
+  color: #ff6400;
   padding:5px 50px;
 }
 
@@ -351,16 +354,6 @@ video{
 
 
 
-@media only screen and (max-width: 400px) {
-  .tab button{
-    padding: 15px 2px;
-  }
-
-  #time{
-    font-size:0.4rem;
-    margin-top: 15px ;
-  }
-}
 
 
 @media only screen and (max-width: 300px) {
